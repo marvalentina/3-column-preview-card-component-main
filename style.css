@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Lexend Deca', sans-serif;
+ }
+.attribution a { 
+    color: hsl(179, 100%, 13%);
+}
+
+:root{
+    --orange-color: hsl(31, 77%, 52%);
+    --dark-color: hsl(184, 100%, 22%);
+    --vdark-color: hsl(179, 100%, 13%);
+}
+body{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 95%);
+}
+body .container .col p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 6em;
+    
+}
+body .container h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+#orange{
+    background-color: var(--orange-color);
+}
+#dark{
+    background-color: var(--dark-color);
+}
+#vdark{
+    background-color: var(--vdark-color);
+}
+.container{
+    justify-content: center;
+    display: flex;
+    width: 60%;
+    height: 65vh;
+    background-color: beige;
+    flex-direction: row;
+    margin: 15vh auto 0;
+
+    
+}
+.btn{
+    padding: 0.9em 1.9em;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    font-family:'Lexend Deca', sans-serif;
+    padding-bottom: 1em;
+    cursor: pointer;
+}
+#btno{
+    color: var(--orange-color) ;
+}
+#btnd{
+    color: var(--dark-color) ;
+}
+#btnv{
+    color: var(--vdark-color) ;
+}
+#btno:hover, #btnd:hover, #btnv:hover {
+    background-color: transparent;
+    border: solid 2px hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+
+.col{
+    padding: 3em 3.6em;
+
+}
+.icon{
+    margin-bottom: 1em ;
+}
+
+
+
+@media(max-width:375px){
+    .col{
+        flex-direction: row;
+        height: 40vh;
+        width: 100vw;
+        padding: 2em;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 120vh;
+        margin: 10vh auto;
+        position: relative;
+    }
+    body .container .col p{
+        margin-bottom: 1.5em;
+    }
+    .attribution{
+        margin-top: 70%;
+        margin-bottom: 3em;
+    }
+    #vdark{
+        margin-bottom: 10vh;
+    }
+
+
+}
